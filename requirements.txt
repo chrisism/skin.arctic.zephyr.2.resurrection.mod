@@ -1,0 +1,2 @@
+kodi.tools==1.2.0rc2
+kodi-addon-checker==0.0.26
