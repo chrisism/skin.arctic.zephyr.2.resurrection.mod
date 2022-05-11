@@ -88,9 +88,9 @@ stages:
           RegEx: 'version="\d+\.\d+\.\d+.*" provider'
           ValueToReplace: 'version="$(addonVersion)" provider'
           
-      - script: |
-            $(packerToolPath) -dupecheck -input $(packerSrc) -output $(packerDest)
-        displayName: 'Run texturepacker'
+      #- script: |
+      #      $(packerToolPath) -dupecheck -input $(packerSrc) -output $(packerDest)
+      #  displayName: 'Run texturepacker'
 
       - task: CopyFiles@2
         displayName: 'Copy addon files for package'
